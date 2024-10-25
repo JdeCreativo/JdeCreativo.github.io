@@ -1,0 +1,269 @@
+@font-face {
+    font-family: cuerpo;
+    src: url(/recursos/fuentes/Ebrima.ttf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(/recursos/fuentes/7490-fontps.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cuerpo, Arial, Helvetica, sans-serif;
+}
+body{
+    height: auto;
+    background-color:#e8dca7;
+    
+}
+header{
+    width: 100%;
+    background-color: #8FC258;
+}
+
+#conten_head{
+    width: 90%;
+    padding: 3vh 2vh;
+    display:inline-flex;
+}
+#logo{
+    width: 30%;
+    text-align: start;
+    cursor: pointer;
+    margin: 0vh 10vh;
+}
+#menu{
+    width: 70%;
+    text-align: end;
+    padding: 2vh 0vh;
+}
+
+nav{
+    font-size: 2vh;
+}
+nav a{
+
+    color: #f8fff0;
+    text-decoration:none;
+    padding: 2vh;
+    
+}
+nav a:hover{
+    color: #f8fff0;
+    text-decoration: underline;
+}
+
+
+.subtitulo{
+    height: auto;
+    background-color: #8FC258;
+    color:#f8fff0;
+    text-align: start;
+    font-family: titulo,Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 3vh;
+}
+
+.textos{
+    color: #000000;
+    text-align: center;
+    font-family: cuerpo,Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+}
+
+/*quienes somos */
+
+#inicio_nosotros{
+    width: 100%;
+    height: 500px;
+    display:inline-flex;
+    background-color: #f8fff0;
+    text-align: center;
+}
+
+#info_quienes{
+    width: 100%;
+    padding: 10vh;
+    text-align: center;
+    margin: auto;
+}
+
+#titulo_parte1{
+    font-size: 60px;
+    font-family: titulo,Arial, Helvetica, sans-serif;
+}
+/*
+#img_quienes{
+    width: 20%;
+    padding: 10vh;
+    text-align: center;
+}*/
+
+/*promociones*/
+
+#inicio_promociones{
+    width: 100%;
+    padding: 0vh 0vh 2vh 0vh;
+    text-align: center;
+}
+#promos{
+    width: 80% ;
+    display: inline-block;
+    padding: 10vh 0vh;
+    /*background-color:#775CA4;*/
+    border-radius: 15px;
+    cursor: pointer;
+}
+#promos img{
+    padding: 1vh;
+    border-radius: 10%;
+}
+
+#promos img:hover{
+   transform: scale(1.2);
+}
+
+/*proceso de trabajo*/
+
+#inicio_proceso{
+    margin-top: 2vh;
+}
+#puntos{
+    width: 70%;
+    margin: auto;
+    margin-top: 4vh;
+    font-size: 17px;
+}
+
+#puntos ol{
+   list-style-position: inside;
+}
+
+.punto_proceso{
+    width: 50%;
+    background-color:#000000;
+    padding: 2vh;
+    margin-top: 2vh;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.punto_proceso2{
+    width: 50%;
+    background-color: #000000;
+    margin-left: 45%;
+    margin-top: 2vh;
+    padding: 2vh;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn_inicio{
+    width: 90%;
+    height: 50px;
+    margin: 3% 5%;
+    background-color:#8FC258;
+    color: #f8fff0;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:titulo, Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+}
+
+/*opiniones*/
+
+#inicio_opinines{
+    width: 100%;
+    background-color:#e8dca7;
+}
+
+#opiniones_todas{
+    width: 80%;
+    padding: 5vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0% 5%;
+}
+
+.opinion_unic{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    border-style:ridge;
+    border-radius: 30px;
+    border-color: #000000;
+    background-color: #8FC258;
+}
+
+
+#img_opinion{
+    width: 30%;
+    padding: 5vh;
+    border-radius: 50%;
+}
+
+#info_opinion{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 100%;
+    padding: 5vh;
+}
+
+#btn_opinar{
+    width: 50%;
+    height: 50px;
+    margin: 3% 25%;
+    border-radius: 25px;
+}
+
+#inicio_opinar{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /*display: none;*/
+}
+
+#opinion{
+    width: 80%;
+    margin: auto;
+    border-style: ridge;
+    border-color: #000000;
+    border-radius: 10px;
+    padding: 5vh;
+    background-color:#f8fff0;
+}
+
+.input_texto{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 90%;
+    padding: 1vh;
+    background-color:#f8fff0;
+}
+
+#nombre{
+    width: 50%;
+    text-align: start;
+}
+#comentario{
+    text-align: start;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+/*final*/
+
+footer{
+    padding: 1vh 0vh 20vh 0vh;
+    text-align: center;
+    background-color:#8FC258;
+    height: 10vh;
+    margin-top: 3vh;
+}
