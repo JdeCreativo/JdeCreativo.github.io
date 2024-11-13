@@ -1,0 +1,24 @@
+body{
+    background-color: #F6EDCB;
+    background-image: url('/recursos/png/fondo_aviso.png');
+    background-size: cover;
+}
+.aviso{
+    max-width: 60vw;
+    background-color: rgba(245, 245, 245, 0.799);
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.btn_regresar{
+    text-decoration: none;
+    padding: 10px;
+    width: 60vw;
+    margin: auto;
+    font-size: 17px;
+    color: #8FC258;
+}
+
+.btn_regresar:hover{
+    text-decoration: underline;
+}

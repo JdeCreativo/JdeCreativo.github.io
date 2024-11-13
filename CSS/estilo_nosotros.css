@@ -1,0 +1,93 @@
+body{
+    background-image: url('/recursos/png/fondo_aviso.png');
+    background-size: cover;
+}
+#quienes_somos{
+    max-width: 80vw;
+    padding: 30px;
+    display:inline-flex;
+    margin: 50px 100px;
+}
+
+#subtitulo_uno{
+    width: 40%;
+}
+
+#texto_uno{
+    width: 60%;
+}
+
+.hover_mision{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#8FC258;
+    overflow: hidden;
+    transition: all 500ms ease-out;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center;
+    align-content: center;
+}
+
+.hover_mision:hover{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contenedor_hover{
+    text-align: center;
+}
+
+#misiosVision{
+    width: 90vw;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px ;
+}
+.MisVis{
+    width: 50%;
+    height: 40vh;
+    background-color: #8FC258;
+    text-align: center;
+    border-radius: 10px;
+    color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.MisVis p{
+    padding: 30px;
+}
+.tit_quienes{
+    font-size: 5vw;
+}
+.tit_misvis{
+    font-size: 40px;
+    padding: 5px;
+}
+
+.btn_contacto{
+    background-color:#8FC258 ;
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn_contacto:hover{
+    background-color: #a9d57a;
+}
+
+#btn_contacto_texto{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+}
