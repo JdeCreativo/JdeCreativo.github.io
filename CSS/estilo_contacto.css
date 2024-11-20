@@ -1,0 +1,86 @@
+
+#formulario_contacto{
+    width: 60vw;
+    margin: auto;
+    padding: 20px;
+}
+
+#form_dentro{
+    width: 60vw;
+    background-color: #f4e3a8;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+#titulo_form{
+    width: 100%;
+    text-align: center;
+    color: #8FC258;
+    margin: 5px;
+}
+
+.nombres_dis{
+    margin: 10px;
+}
+.input_dis{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: #f4e3a8;
+}
+
+#nombre_registro, #marca_registro, #telefono_registro{
+    width: 90%;
+}
+
+#espacio{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+}
+
+#serv{
+    width: 20vw;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8FC258;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#serv option {
+    background-color: whitesmoke;
+    color: #8FC258;
+    
+}
+
+#serv option:hover{
+    background-color: whitesmoke;
+    color:#8FC258;
+}
+
+#btn_enviar{
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #8FC258;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#btn_enviar:hover{
+    background-color: whitesmoke;
+    color: #8FC258;
+}
+
+
+
+

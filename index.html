@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        console.log("ejecutamos ascripts");
+       </script>
+      
+      <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW9DNSKVKP"></script>
+          <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+      
+          gtag('config', 'G-VW9DNSKVKP');
+          
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TL35RMKK');</script>
-    <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="/CSS/estilo.css">
     <link rel="stylesheet" href="/CSS/estilo_cookies.css">
@@ -19,11 +25,6 @@
 
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL35RMKK"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <header>
         <div id="conten_head">
             <div id="logo">
@@ -34,8 +35,8 @@
                 <nav>
                     <a href="/index.html">Inicio</a>
                     <a href="/nosotros.html">Nosotros</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Contáctanos</a>
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/contacto.html">Contáctanos</a>
                 </nav>
             </div>
         </div>
@@ -58,59 +59,86 @@
     </div>
 
     <div id="inicio_promociones">
-        <h1 class="subtitulo">Novedades<br>de hoy</h3>
+        <h1 class="subtitulo">Novedades de hoy</h3>
 
         <div id="promos">
-           <img src="/recursos/jpg/Anuncio1.jpg" alt="" width="30%">
-           <img src="/recursos/jpg/Anuncio2.jpg" alt="" width="30%">
-           <img src="/recursos/jpg/Anuncio3.jpg" alt="" width="30%">
+            <a href="/servicios.html"><img src="/recursos/jpg/Anuncio1.jpg" id="rec1" width="30%"></a>
+            <a href="/servicios.html"><img src="/recursos/jpg/Anuncio2.jpg" id="rec2" width="30%"></a>
+            <a href="/servicios.html"><img src="/recursos/jpg/Anuncio3.jpg" id="rec3" width="30%"></a>
+           
         </div>
         
     </div>
 
     <div id="inicio_proceso">
-        <h1 class="subtitulo">¿Cuál es el proceso <br>para conseguir mi diseño?</h3>
+        <h1 class="subtitulo">¿Cuál es el proceso para conseguir mi diseño?</h3>
         <div id="puntos">
             <ol>
-                <li class="punto_proceso">Llena el formulario de contacto ubicado en la sección contáctanos.</li>
-                <li class="punto_proceso2">En un lapso de 24 a 72 horas nos pondremos en contacto contigo.</li>
-                <li class="punto_proceso">Mediante una sencilla llamada hablaremos sobre las necesidades de tu marca, los servicios que solicitas y la cotización.</li>
-                <li class="punto_proceso2">Tras llegara a un acuerdo iniciaremos con el proceso de diseño.</li>
-                <li class="punto_proceso">Por medio de un correo electrónico se te hará llegar una muestra de los diseños solicitados.</li>
-                <li class="punto_proceso2">En caso de correcciones o desacuerdos el diseño será modificado.</li>
-                <li class="punto_proceso">Tras realizar todas las correcciones se te hará llegar el diseño final. </li>
+                <li class="punto_proceso"> <div>1. Llena el formulario de contacto ubicado en la sección contáctanos.</div></li>
+                <li class="punto_proceso2"> <div>2. En un lapso de 24 a 72 horas nos pondremos en contacto contigo.</div></li>
+                <li class="punto_proceso"> <div>3. Mediante una sencilla llamada hablaremos sobre las necesidades de tu marca, los servicios que solicitas y la cotización.</div></li>
+                <li class="punto_proceso2"> <div>4. Tras llegara a un acuerdo iniciaremos con el proceso de diseño.</div> </li>
+                <li class="punto_proceso"><div>5. Por medio de un correo electrónico se te hará llegar una muestra de los diseños solicitados.</div></li>
+                <li class="punto_proceso2"><div>6. En caso de correcciones o desacuerdos el diseño será modificado.</div></li>
+                <li class="punto_proceso"><div>7. Tras realizar todas las correcciones se te hará llegar el diseño final.</div></li>
             </ol>
     
         </div>
         
+    </div>
 
-        <input class="btn_inicio" type="button" value="Servicios">
+    <div class="btn_contacto">
+        <a class="btn_contacto_texto" href="/servicios.html">Servicios</a>
     </div>
 
     <div id="inicio_opinines">
-        <h1 class="subtitulo">Los clientes <br> dicen:</h3>
+        <h1 class="subtitulo">Los clientes dicen:</h3>
 
         <div id="opiniones_todas">
-            <img class="flechas" src="/recursos/png/icons8-flecha-96.png" alt="" height="5%">
-            <div class="opinion_unic">
-                <img id="img_opinion" src="/recursos/jpg/descarga (4).jpg" alt="" >
-                <div id="info_opinion">
-                    <p>Alicia Chavez</p>
-                    <p>★★★★★</p>
-                    <p>¡Muy buen trabajo realizado!</p>
-                </div>
-            </div>
-            <img  class="flechas" src="/recursos/png/icons8-flecha-96 (1).png" alt="" height="5%">
+            <ul>
+                <li>
+                    <div class="opinion_unic">
+                        <img class="img_opinion" src="/recursos/jpg/descarga (4).jpg" alt="" >
+                        <div class="info_opinion">
+                            <h3>Alicia Chavez</h3>
+                            <p> </p>
+                            <p>Excelente trabajo realizado, lo recomiendo abiertamente </p>
+                        </div>
+                    </div>
+                </li>
 
+                <li>
+                    <div class="opinion_unic">
+                        <img class="img_opinion" src="/recursos/jpg/descarga (5).jpg" alt="" >
+                        <div class="info_opinion">
+                            <h3>Filomeno Manila</h3>
+                            <p> </p>
+                            <p>Se trabaja muy bien en equipo, escuchó todas mis opiniones y el resultado final fue muy bueno. </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="opinion_unic">
+                        <img class="img_opinion" src="/recursos/jpg/tortitas de cumpleaños.jpg" alt="" >
+                        <div class="info_opinion">
+                            <h3>Patricia Campusano</h3>
+                            <p> </p>
+                            <p>Me encantó el resultado final, trabajan muy bien y cumplieron con todo lo que esperaba.</p>
+                        </div>
+                    </div>
+                </li>
+        
+            </ul>
             
         </div>
-
-        <input class="btn_inicio" id="btn_opinar" type="button" value="Opinar">
+        <input class="btn_opinion" id="btn_opinar" type="button" value="Opinar" onclick="abrir()">
     </div>
 
     <div id="inicio_opinar">
         <div id="opinion">
             <form id="formulario">
+                <h2>¡Cuéntanos tu opinión!</h2>
                 <div id="nombre">
                     <label for="">Nombre</label><br>
                     <input type="text" name="nombre_input" id="nombre_input" class="input_texto">
@@ -121,11 +149,13 @@
                 </div>
             </form>
 
-            <input class="btn_inicio" type="button" value="Enviar">
+            <input class="btn_inicio" type="button" value="Enviar" onclick="cerrar()">
         </div>
     </div>
 
-    <input type="button" class="btn_inicio" value="Contactar">
+    <div class="btn_contacto">
+        <a class="btn_contacto_texto" href="/contacto.html">Contactar</a>
+    </div>
 
     
     <footer>

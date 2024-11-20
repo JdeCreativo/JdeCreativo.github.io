@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <link rel="stylesheet" href="/CSS/estilo_contacto.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <script>
+            console.log("ejecutamos ascripts");
+           </script>
+          
+          <!-- Google tag (gtag.js) -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW9DNSKVKP"></script>
+              <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+          
+              gtag('config', 'G-VW9DNSKVKP');
+              </script>
+        <div id="conten_head">
+            <div id="logo">
+                <a href="/index.html"><img src="/recursos/jpg/logo_blanco.png" alt="" width="20%"></a>
+                
+            </div>
+            <div id="menu">
+                <nav>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/nosotros.html">Nosotros</a>
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/contacto.html">Contáctanos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="formulario_contacto">
+
+        <div id="form_dentro">
+            <div id="titulo_form">
+                <h2>Contáctanos</h2>
+            </div>
+            
+            <form id="formulario">
+                <label for="Nombre_cliente" class="nombres_dis">Nombre:</label><br>
+                <input type="text" id="nombre_registro" class="input_dis" name="Nombre_cliente" value=""><br>
+    
+                <label for="marca_cliente" class="nombres_dis">¿Cuál es tu marca?</label><br>
+                <input type="text" id="marca_registro" class="input_dis" name="marca_cliente" value=""><br>
+    
+                <div id="espacio">
+                    <div class="espaciouno">
+                        <label for="serv_cliente" class="nombres_dis" >Servicio</label><br>
+                        <select name="servicioss" id="serv">
+                            <option value="1">Anuncio</option>
+                            <option value="2">Página web</option>
+                            <option value="3">Re-diseño</option>
+                            <option value="4">Animación</option>
+                        </select>
+                    </div>
+                   
+                    <div class="espaciouno">
+                        <label for="motivo_cliente" class="nombres_dis">Motivo de tu solicitud</label><br>
+                        <input type="text" id="motivo_registro" class="input_dis" name="motivo_cliente" value=""><br>
+                    </div>
+    
+                </div>
+                
+            
+                <label for="telefono_cliente" class="nombres_dis">Número de contácto</label> <br>
+                <input type="text" id="telefono_registro" class="input_dis" name="telefono_cliente" value=""><br>
+
+                <input type="button" value="Enviar" id="btn_enviar" onclick="accion()">
+            </form>
+           
+        </div>
+        
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=61565958456254&locale=es_LA"><img src="/recursos/png/icons8-facebook-120.png" alt="" height="100%"></a>
+        <a href="https://www.instagram.com/jde.creativo?fbclid=IwY2xjawGfuN1leHRuA2FlbQIxMAABHQGx7FRplANZrYhfp6WhzTnCaU1ANjVgpdImh-WDrnqRac--zNuyF1bVGw_aem_6S5oKPipwGpz7FOpX-Pslw"><img src="/recursos/png/icons8-instagram-120.png" alt="" height="100%"></a>
+        <p>jdecreativo.contacto@gmail.com</p>
+    </footer>
+
+
+    <script src="/JS/contacto.js"></script>
+</body>
+</html>

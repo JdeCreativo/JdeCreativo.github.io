@@ -9,6 +9,19 @@
 </head>
 <body>
     <header>
+        <script>
+            console.log("ejecutamos ascripts");
+           </script>
+          
+          <!-- Google tag (gtag.js) -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW9DNSKVKP"></script>
+              <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+          
+              gtag('config', 'G-VW9DNSKVKP');
+              </script>
         <div id="conten_head">
             <div id="logo">
                 <a href="/index.html"><img src="/recursos/jpg/logo_blanco.png" alt="" width="20%"></a>
@@ -18,8 +31,8 @@
                 <nav>
                     <a href="/index.html">Inicio</a>
                     <a href="/nosotros.html">Nosotros</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Contáctanos</a>
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/contacto.html">Contáctanos</a>
                 </nav>
             </div>
         </div>
@@ -101,7 +114,7 @@
     </div>
 
     <div class="btn_contacto">
-        <a id="btn_contacto_texto" href="#">Contactar</a>
+        <a class="btn_contacto_texto" href="/contacto.html">Contactar</a>
     </div>
 
     <footer>

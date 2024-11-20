@@ -72,22 +72,3 @@ body{
     padding: 5px;
 }
 
-.btn_contacto{
-    background-color:#8FC258 ;
-    width: 90vw;
-    margin: auto;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.btn_contacto:hover{
-    background-color: #a9d57a;
-}
-
-#btn_contacto_texto{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 18px;
-}

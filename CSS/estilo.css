@@ -60,7 +60,7 @@ nav a:hover{
     color:#f8fff0;
     text-align: start;
     font-family: titulo,Arial, Helvetica, sans-serif;
-    font-size: 70px;
+    font-size: 30px;
     padding: 3vh;
 }
 
@@ -107,7 +107,7 @@ nav a:hover{
     text-align: center;
 }
 #promos{
-    width: 80% ;
+    width: 90% ;
     display: inline-block;
     padding: 10vh 0vh;
     /*background-color:#775CA4;*/
@@ -123,20 +123,85 @@ nav a:hover{
    transform: scale(1.2);
 }
 
+
+
 /*proceso de trabajo*/
 
 #inicio_proceso{
     margin-top: 2vh;
-}
-#puntos{
-    width: 70%;
-    margin: auto;
-    margin-top: 4vh;
-    font-size: 17px;
+    margin-bottom: 20px;
 }
 
+
+#puntos{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*
 #puntos ol{
    list-style-position: inside;
+}*/
+
+#puntos ol li{
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color:#8FC258;
+}
+
+#puntos ol li::after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+#puntos ol li div{
+    position: relative;
+    bottom: 0;
+    width: 20vw;
+    padding: 15px;
+    background:#8FC258;
+    color: whitesmoke;
+}
+
+#puntos ol li div::before{
+    content: '';
+    position: absolute;
+    bottom: 20vw;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#puntos ol li:nth-child(odd) div{
+    left: 30px;
+    top: 20px;
+}
+/*
+#puntos ol li:nth-child(odd) div::before{
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #000000 transparent transparent;
+}*/
+
+#puntos ol li:nth-child(even) div{
+    left: -310px;
+    top: 20px;
+}
+
+/*
+#puntos ol li:nth-child(even) div::before{
+    right: -15x;
+    border-width: 18px 0px;
+    border-color: transparent #000000 transparent transparent;
 }
 
 .punto_proceso{
@@ -158,7 +223,7 @@ nav a:hover{
     border-radius: 20px;
     text-align: center;
     color: #ffffff;
-}
+}*/
 
 .btn_inicio{
     width: 90%;
@@ -178,62 +243,111 @@ nav a:hover{
 #inicio_opinines{
     width: 100%;
     background-color:#F6EDCB;
+    margin-top: 20px;
 }
 
 #opiniones_todas{
-    width: 80%;
+    width: 60%;
+    height: 20%;
     padding: 5vh;
-    border-radius: 10px;
-    display: flex;
+    border-style: none;
     align-items: center;
     text-align: center;
-    margin: 0% 5%;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    
+}
+
+#opiniones_todas ul{
+    display: flex;
+    padding: 0;
+    width: 315%;
+
+    animation: slide 15s infinite alternate ease-in-out;
+    
+}
+
+
+#opiniones_todas ul li{
+    list-style: none;
+    width: 100%;
+}
+
+#opiniones_todas ul li div{
+    width: 100%;
 }
 
 .opinion_unic{
-    width: 70%;
+    
     display: flex;
     margin: auto;
-    border-style:ridge;
-    border-radius: 30px;
-    border-color: #000000;
-    background-color: #8FC258;
+    border-style:none;
+    background-color: #9b81c5;
+    color: whitesmoke;
 }
 
 
-#img_opinion{
+@keyframes slide{
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+    35% {margin-left: -115%;}
+    65% {margin-left: -115%;}
+
+    65% {margin-left: -215%;}
+    95% {margin-left: -215%;}
+}
+
+.img_opinion{
     width: 30%;
     padding: 5vh;
     border-radius: 50%;
 }
 
-#info_opinion{
+.info_opinion{
     width: 70%;
     text-align: center;
     margin: auto;
-    font-size: 100%;
+    font-size: 20px;
     padding: 5vh;
 }
 
+.btn_opinion{
+    margin-bottom: 20px ;
+    margin-left: 33vw;
+    border-radius: 10px;
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+
 #btn_opinar{
-    width: 50%;
-    height: 50px;
-    margin: 3% 25%;
-    border-radius: 25px;
+    width: 30%;
+    text-decoration: none;
+    color: #775CA4;
+}
+#btn_opinar:hover{
+    background-color: #9b81c5;
+    color: whitesmoke;
 }
 
 #inicio_opinar{
+    
     width: 100%;
     height: auto;
     text-align: center;
-    /*display: none;*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display:none;
 }
 
 #opinion{
     width: 80%;
     margin: auto;
-    border-style: ridge;
-    border-color: #000000;
+    border-style: none;
     border-radius: 10px;
     padding: 5vh;
     background-color:#f8fff0;
@@ -268,4 +382,25 @@ footer{
     margin-top: 3vh;
     color: whitesmoke;
     font-size: 15px;
+}
+
+
+.btn_contacto{
+    background-color:#8FC258 ;
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn_contacto:hover{
+    background-color: #a9d57a;
+}
+
+.btn_contacto_texto{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
 }
